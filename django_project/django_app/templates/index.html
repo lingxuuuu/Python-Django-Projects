@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Index</title>
+      {% load static %}
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">    
+      <script src="{% static 'js/script.js' %}"></script>
+    </head>
+    <body>
+        <img src="{% static 'images/image.jpg' %}" />
+        
+        <h1>I am the index_main from root</h1>
+        <h1>Info From Server:</h1>
+        <p>Name: {{name}}</p>
+        <p>Color: {{favorite_color}}</p>
+        <p>Pets</p>
+        <ul>
+        {% for pet in pets %}
+        <li>{{pet}}</li>
+        {% endfor %}
+        </ul>
+    </body>   
+   </html>
+

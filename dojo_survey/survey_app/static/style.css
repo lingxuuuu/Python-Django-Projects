@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+}
+
+
+.container {
+    border: 2px solid black;
+    margin: 0 auto;
+    width: 970px;
+    padding: 50px;
+
+}
+input, select, textarea {
+    display: block;
+    margin: 25px 25px 0 200px;
+    
+}
+p {
+    display: inline;
+    margin: 25px 25px 0 10px;
+}
